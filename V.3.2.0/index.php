@@ -95,12 +95,13 @@
                         <li><a class="nav-link" href="#about">Acerca de Nosotros</a></li>
                         <li><a class="nav-link" href="#services">Servicios</a></li>
 						<li><a class="nav-link" href="#appointment">Citas</a></li>
+						<li><a class="nav-link" href="#pago">Pagos</a></li>
+						<li><a class="nav-link" href="#reseñas">Reseñas</a></li>
 						<li><a class="nav-link" href="#consultas">Consultas</a></li>
                         <li><a class="nav-link" href="#gallery">Gallery</a></li>
 						<li><a class="nav-link" href="#team">Doctores</a></li>
                         <li><a class="nav-link" href="#blog">Blog</a></li>
 						<li><a class="nav-link" href="#contact">Contactos</a></li>
-						<li><a class="nav-link" href="Aviso de Proteccion de Datos.html">Aviso Proteccion de Datos</a></li>
                     </ul>
                 </div>
             </div>
@@ -419,6 +420,58 @@
 	</form>
 	<!-- End Appointment -->
 	
+	<div id="pago">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Pago</h2>
+						<p>Tenemos 2 formatos de Pago mediante Paypal y Tarjetas de Credito o Debito</p>
+						<script src="https://www.paypal.com/sdk/js?client-id=AcVUSm5JrMn7ng_oBjS7JQH2wAWaaMLR1v0eTnY1f5QWdw6M5jxPwZ1WyPAUGirmHVjcPgfU7tG4LLmb"></script>
+						<div id="paypal-button-container" ></div>
+						<script>
+							paypal.Buttons({
+								style:{
+									color: 'blue',
+									shape: 'pill',
+									label: 'pay'
+								},
+								createOrder: function(data, actions){
+									return actions.order.create({
+										purchase_units: [{
+											amount: {
+												value: 35
+											}
+										}]
+									});
+								}
+							}).render('#paypal-button-container');
+						</script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="reseñas">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Reseñas</h2>
+						<p>Puedes ver reseñas o noticias refentes enfermedades cotidianas</p>
+						<a class="twitter-timeline" href="https://twitter.com/alejand93821454?ref_src=twsrc%5Etfw">Tweets by alejand93821454</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
 	<div id="consultas">
 		<div class="container-fluid">
 			<div class="row">
