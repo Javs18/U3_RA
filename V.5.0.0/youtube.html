@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saber más de nostros</title>
+    <link rel="stylesheet" href="stylesYT.css">
+</head>
+<body>
+    <div id="login-container">
+        <h2>Iniciar sesión</h2>
+        <form id="login-form">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="login()">Iniciar sesión</button>
+        </form>
+    </div>
+
+    <div id="info-container" style="display: none;">
+        <div id="company-info">
+            <h2>Análisis Clínicos</h2>
+            <p>En el siguiente video podras conocer mas sobre nostros y los analisis clínicos</p>
+        </div>
+
+        <div id="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QQtl30QxJlo?si=2F7JGhvY9iUep-b5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
